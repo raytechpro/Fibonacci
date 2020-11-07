@@ -20,7 +20,7 @@ namespace Fibonacci.Tests
 
         [TestMethod]
         [ExpectedException(typeof(ArgumentOutOfRangeException), "nth Term must be 0 or greater.")]
-        public void Should_Throw_Exception_When_nthTerm_Is_LessThan_Zero()
+        public void Should_Throw_Exception_When_nthTerm_Is_LessThan_0()
         {
             const int nthTerm = -1;
             BigInteger result = Fibonacci.CalculateFibonacci(nthTerm);
